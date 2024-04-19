@@ -1,1 +1,95 @@
+/*
+Author:Sapana Gautam
+Date: April/6/2024
+File Name: apply08.css
+*/
 
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+/*Create a style rule for the table element*/
+table{
+	width: 80%;
+	margin:0 auto   0 auto;
+	border: 3px solid #71881b ;
+
+}
+
+/*style rule for table, tr, th, and td selectors*/
+
+table, tr, th, td {
+	border-collapse: collapse;
+	padding:2%;
+
+
+}
+
+/*style rule for the caption element*/
+caption{
+	font-size: 2em;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+/*style rule for th and td selectors */
+th,td{
+	border: 1px solid #7188bb;
+}
+
+/*style rule for td*/
+td{
+	text-align: center;
+}
+
+/*style rule for tr */
+tr{
+	background-color: #d3e788;
+}
+.grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+}
+
+/*Style rule for grid images */
+.gridimage {
+	width: 47%;
+}
+
+/*Hiding image*/
+.hide-on-mobile{
+	display: none;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
+
+/* Desktop tablet style*/
+@media screen and (min-width: 620px), print{
+	.hide-on-mobile{
+		display: block;
+	}
+	.mobile{
+		display: none;
+	}
+}
